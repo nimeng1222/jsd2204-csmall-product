@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- 模型版本，固定值 -->
+    <modelVersion>4.0.0</modelVersion>
+    <!-- 父级项目版本，推荐暂时使用2.5.9 -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.9</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <!-- 当前项目信息 -->
+    <groupId>cn.tedu</groupId>
+    <artifactId>csmall-product</artifactId>
+    <version>0.0.1</version>
+    <name>jsd2204-csmall-product-teacher</name>
+    <description>这是酷鲨商城的商品管理服务的项目（学习中……）</description>
+
+    <!-- 属性 -->
+    <properties>
+        <!-- 使用的Java的版本 -->
+        <java.version>1.8</java.version>
+    </properties>
+
+    <!-- 当前项目使用的依赖项（框架、工具包） -->
+    <!-- scope > test：此依赖项的作用范围只是测试，仅能用于src/test下的代码，且不参与编译、打包 -->
+    <dependencies>
+        <!-- Spring Boot的基础依赖项 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <!-- Spring Boot的测试的依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
